@@ -18,5 +18,11 @@ namespace WFA
             GameManager.InitGame();
             new Questions().Show();
         }
+
+        private void logoutButton_Click(object sender, System.EventArgs e)
+        {
+            Close();
+            new Login().Show();
+        }
     }
 }

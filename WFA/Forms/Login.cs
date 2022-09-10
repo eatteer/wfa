@@ -43,5 +43,20 @@ namespace WFA
 
             if (username.Length == 0 || password.Length == 0) throw new Exception("No fields be empty");
         }
+
+        private void checkRegisteresUsersButton_Click(object sender, EventArgs e)
+        {
+            String users = "";
+            if(UsersService.users.Count == 0)
+            {
+                MessageBox.Show("There are not registered users");
+                return;
+            }
+            foreach (var user in UsersService.users)
+            {
+                users += $"{user.name} - {user.username} \n";
+            }
+            MessageBox.Show(users);
+        }
     }
 }

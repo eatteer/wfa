@@ -3,7 +3,7 @@ using WFA.Models;
 
 namespace WFA
 {
-    class GameManager
+    static class GameManager
     {
         public static List<Question> questions = new List<Question>();
         public static Question currentQuestion;
@@ -11,9 +11,12 @@ namespace WFA
 
         public static void InitGame()
         {
+            questions.Clear();
+            currentQuestionIndex = 0;
+
             // FIRST QUESTION
             Question question1 = new Question(
-                "¿Cómo se llama el payaso en la película IT?",
+                "What is the name of the clown in the movie IT?",
                 new List<string>() { "Pennywise", "Joker", "Krusty", "Spaulding" },
                 0
             );
@@ -22,31 +25,31 @@ namespace WFA
 
             // SECOND QUESTION
             Question question2 = new Question(
-                "¿Cómo se llama el hada de la película de Disney Peter Pan?",
-                new List<string>() { "Wendy", "Navi", "Campanilla", "Luma" },
+                "What is the name of the fairy in the Disney movie Peter Pan?",
+                new List<string>() { "Wendy", "Navi", "Tinker Bell", "Luma" },
                 2
             );
             questions.Add(question2);
 
             // THIRD QUESTION
             Question question3 = new Question(
-                "¿Qué tipo de medio digital usa la extensión de archivo .wav?",
-                new List<string>() { "Texto", "Audio", "Video", "Imagen" },
+                "What type of digital media uses the .wav file extension?",
+                new List<string>() { "Text", "Audio", "Video", "Image" },
                 1
             );
             questions.Add(question3);
 
             // FOURTH QUESTION
             Question question4 = new Question(
-                "¿En cuál país se encuentra el castillo de Drácula en la novela Drácula?",
-                new List<string>() { "Austria", "Albania", "Inglaterra", "Rumanía" },
+                "In which country is Dracula's castle located in the novel Dracula?",
+                new List<string>() { "Austria", "Albania", "England", "Romania" },
                 3
             );
             questions.Add(question4);
 
             // FIFTH QUESTION
             Question question5 = new Question(
-                "¿Cómo se llama la espada de Arthur Pendragon, el legendario rey de Bretaña?",
+                "What is the name of the sword of Arthur Pendragon, the legendary king of Brittany?",
                 new List<string>() { "Lancelot", "Excalibur", "Wallace", "Camelot" },
                 1
             );

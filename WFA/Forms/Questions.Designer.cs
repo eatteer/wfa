@@ -106,7 +106,7 @@ namespace WFA.Forms
             // 
             // callButton
             // 
-            this.callButton.Location = new System.Drawing.Point(180, 135);
+            this.callButton.Location = new System.Drawing.Point(179, 135);
             this.callButton.Name = "callButton";
             this.callButton.Size = new System.Drawing.Size(75, 23);
             this.callButton.TabIndex = 7;
@@ -118,7 +118,7 @@ namespace WFA.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 450);
+            this.ClientSize = new System.Drawing.Size(332, 261);
             this.Controls.Add(this.callButton);
             this.Controls.Add(this.fiftyButton);
             this.Controls.Add(this.changeButton);

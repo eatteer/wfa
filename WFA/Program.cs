@@ -18,7 +18,6 @@ namespace WFA
             Application.SetCompatibleTextRenderingDefault(false);
             new Login().Show();
             Application.Run();
-
         }
     }
 }

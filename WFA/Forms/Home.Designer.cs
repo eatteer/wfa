@@ -31,6 +31,7 @@ namespace WFA
         {
             this.loggedInUserLabel = new System.Windows.Forms.Label();
             this.play = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loggedInUserLabel
@@ -52,11 +53,22 @@ namespace WFA
             this.play.UseVisualStyleBackColor = true;
             this.play.Click += new System.EventHandler(this.play_Click);
             // 
+            // logoutButton
+            // 
+            this.logoutButton.Location = new System.Drawing.Point(15, 226);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(205, 23);
+            this.logoutButton.TabIndex = 2;
+            this.logoutButton.Text = "Logout";
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 450);
+            this.ClientSize = new System.Drawing.Size(232, 261);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.play);
             this.Controls.Add(this.loggedInUserLabel);
             this.Name = "Home";
@@ -70,5 +82,6 @@ namespace WFA
 
         private System.Windows.Forms.Label loggedInUserLabel;
         private System.Windows.Forms.Button play;
+        private System.Windows.Forms.Button logoutButton;
     }
 }

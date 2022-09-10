@@ -35,6 +35,7 @@ namespace WFA
             this.usernameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
+            this.checkRegisteresUsersButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usernameTextBox
@@ -90,11 +91,23 @@ namespace WFA
             this.signInButton.UseVisualStyleBackColor = true;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
+            // checkRegisteresUsersButton
+            // 
+            this.checkRegisteresUsersButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.checkRegisteresUsersButton.Location = new System.Drawing.Point(15, 226);
+            this.checkRegisteresUsersButton.Name = "checkRegisteresUsersButton";
+            this.checkRegisteresUsersButton.Size = new System.Drawing.Size(200, 23);
+            this.checkRegisteresUsersButton.TabIndex = 6;
+            this.checkRegisteresUsersButton.Text = "Check Registered Users";
+            this.checkRegisteresUsersButton.UseVisualStyleBackColor = true;
+            this.checkRegisteresUsersButton.Click += new System.EventHandler(this.checkRegisteresUsersButton_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 450);
+            this.ClientSize = new System.Drawing.Size(232, 261);
+            this.Controls.Add(this.checkRegisteresUsersButton);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
@@ -116,6 +129,7 @@ namespace WFA
         private System.Windows.Forms.Label usernameLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.Button checkRegisteresUsersButton;
     }
 }
 
